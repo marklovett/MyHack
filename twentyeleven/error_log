@@ -1,0 +1,2 @@
+[28-Oct-2013 05:21:28 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/bqamin/public_html/wp-content/themes/twentyeleven/tag.php on line 10
+[26-Dec-2013 05:43:11 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/bqamin/public_html/wp-content/themes/twentyeleven/404.php on line 10
