@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My Web Page</h1>
+
+
+<!--------------------JS MATH without function-------------------->
+<script>
+a = 5;
+b = 6;
+c = a + b;
+document.write(c); // prints 11
+document.write("<br>");
+
+//-------------------END JS MATH ---------------------------->
+
+var name = prompt('what is your name?');
+if (name == Joe) {
+	alert('You are not Mark!');
+}
+</script>
+
+
+<!---------------HTML------------------------------------------>
+<button onclick = "myFunction1()"> Try It 1</button>
+<button onclick = "myFunction2()"> Try It 2</button>
+<button onclick = "myFunction6()"> Try It 6</button>
+
+<p id="demo1">A Paragraph 1</p>
+<p id="demo2">A Paragraph 2</p>
+<p id = "demo3"></p>
+<p id = "demo4"></p>
+<p id = "demo5"></p>
+<p id = "demo6"></p>
+
+<!---------------END HTML---------------------------------------->
+
+<script>
+// -----------JS MATH IN FUNCTIONS 3 buttons above--------/
+function myFunction1() {//button 1
+  x = (0.2*10 + 0.1*10) / 10;
+  document.getElementById("demo1").innerHTML ='.2 + .3 = ' + x;
+}
+
+function myFunction2() {  //2nd button
+  var x = 1000 / "Apple";    //prints NaN
+  var y = 1000 / "10";      //prints 100
+  document.getElementById("demo2").innerHTML = x + " " + y;
+}
+document.write("<br>");
+
+function myFunction6() // 3rd button
+{
+var str="a,b,c,d,e,f";
+var n=str.split(",");    //converts a string to an array with split() method
+document.getElementById("demo6").innerHTML=n[4]; // prints e
+}
+document.write("<br>");
+
+
+//number object false stuff
+var x = 123;              // x is a number
+var y = new Number(123);  // y is an object
+var txt = typeof(x) + " " + typeof(y);
+document.getElementById("demo3").innerHTML=txt; //prints number object
+document.getElementById("demo4").innerHTML= x===y;//prints FALSE
+
+//hello world to UPPERCASE
+var txt = "Hello World";   //prints 11 for txt.length
+document.write(txt.length);
+document.write("<p>" + txt.toUpperCase() + "</p>");
+document.write("<br>");
+
+//string match
+var str = "String match world!";
+document.write(str.match("world") + "<br>");//world
+document.write(str.match("World") + "<br>");//null
+document.write(str.match("world!"));// world
+document.write("<br>"); document.write("<br>");
+
+
+// 'Regular' Array and assigned values
+var i;
+var mycars = new Array();
+mycars[0] = "Saab";
+mycars[1] = "Volvo";
+mycars[2] = "BMW";
+
+for (i=0;i<mycars.length;i++) //for loop loops thru array
+{
+document.write(mycars[i] + "<br>");  //prints all the array
+}
+document.write("<br>"); document.write("<br>");
+
+
+//'Condensed' Array and assigned values
+
+var myCars = new Array('BMW', 'Volvo', 'Saab');
+
+for (i=0;i<myCars.length;i++) //for loop loops thru array
+{
+document.write(myCars[i] + "<br>");  //prints all the array
+}
+document.write("<br>"); document.write("<br>");
+
+
+//'Literal' Array and assigned values
+
+var myCars = ['VW', 'Volvo', 'Saab'];
+
+for (i=0;i<mycars.length;i++) //for loop loops thru array
+{
+document.write(mycars[i] + "<br>");  //prints all the array
+}
+document.write("<br>");document.write("<br>");
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
